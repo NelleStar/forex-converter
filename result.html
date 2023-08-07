@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} Forex Conversion Result {% endblock %}
+
+{% block content %}
+
+    <h2>Forex Conversion Result</h2>
+
+    {% if result %}
+        <p>Converted Amount: {{ result }}</p>
+    {% else %}
+        <p>No result available.</p>        
+    {% endif %}
+
+    <form action="/" method="get">
+        <button type="submit">Reset</button>
+    </form>
+
+{% endblock %}
+
